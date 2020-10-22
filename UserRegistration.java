@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
 	public static void main(String[] args) {
-		String password = "Siva1423";
-		String pattern = "^(?=.*?[A-Z]).{8,}";
+		String password = "Sivak123";
+		String pattern = "^(?=.*?[A-Z])(?=.*?[0-9]).{8,}";
 		Pattern p = Pattern.compile(pattern);
 		Matcher m = p.matcher(password);
 		if (m.matches())
