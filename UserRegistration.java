@@ -5,10 +5,10 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
 	public static void main(String[] args) {
-		String email = "abc.xyz@bl.co.in";
-		String pattern = "^[a-z]{3,}[.\\w]*@[\\w]{2,}.[\\w]{2,3}[.a-z]*$";
+		String mobileNo = "91-9178954621";
+		String pattern = "^[1-9]{2}-[1-9]{1}[0-9]{9}$";
 		Pattern p = Pattern.compile(pattern);
-		Matcher m = p.matcher(email);
+		Matcher m = p.matcher(mobileNo);
 		if (m.matches())
 			System.out.println("Valid");
 		else
